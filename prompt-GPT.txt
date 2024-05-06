@@ -1,0 +1,1 @@
+bagaimana cara menggunakan fopen dan fclose dalam program bahasa c

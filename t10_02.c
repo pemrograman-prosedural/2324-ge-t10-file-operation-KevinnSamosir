@@ -1,5 +1,5 @@
-// NIM - Name
-// NIM - Name
+// 12S23008 - Ranty Insen Pakpahan
+// 12S23015 - Kevin Kristoforus Samosir
 
 #include <stdio.h>
 #include "./libs/dorm.h"
