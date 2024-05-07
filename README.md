@@ -17,7 +17,7 @@ Saat ini telah disediakan lima initial data pada:
 Kemudian, diberi masukan berikut.
 
 ```bash
-dorm-print-all-detail
+dorm-print-all-detailL
 student-print-all-detail
 ---
 

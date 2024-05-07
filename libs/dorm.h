@@ -4,7 +4,7 @@
 #include "gender.h"
 
 
-
+ 
 struct dorm_t
 {
     char name[20];

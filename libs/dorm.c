@@ -7,11 +7,11 @@
 struct dorm_t create_dorm(char *_name, unsigned short _capacity, enum gender_t _gender)
 {
     struct dorm_t temp;
-    memset(temp.name,"\0", sizeof(temp.name));
+    memset(temp.name,'\0', sizeof(temp.name));
     strcpy(temp.name, _name);
     temp.capacity = _capacity;
     temp.residents_num = 0;
-    temp.gender = _gender
+    temp.gender = _gender;
 
     return temp;
     
@@ -37,11 +37,11 @@ void printAllDormDetails(struct dorm_t *dorm, int banyak_dorm) {
     }
 }
 
-void Newdorm(struct dorm_t *dorm, struct dorm_t *dorm_modif, int bamyak_dorm ){
+void Newdorm(struct dorm_t *dorm, struct dorm_t *dorm_modif, int banyak_dorm ){
      for (int i = 0; i < banyak_dorm; i++) {
-        strcpy (dorm_modif[i].name, dorm[i].name)
-        dorm_modif[i].gender = dorm [i].gender;
+        strcpy (dorm_modif[i].name, dorm[i].name);
+        dorm_modif [i].gender = dorm [i].gender;
         dorm_modif [i].capacity = dorm [i].capacity;
-        dorm_modif [i].residents_num = dorm [i].residentrs_num;
+        dorm_modif [i].residents_num = dorm [i].residents_num;
      }
 }
