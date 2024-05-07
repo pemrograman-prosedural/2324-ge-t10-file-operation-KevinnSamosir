@@ -4,6 +4,22 @@
 #include "dorm.h"
 #include "student.h"
 
+struct student_t create_student(char *_id, char *_name, char *_year, enum gender_t _gender)
+{
+    struct student_t temp;
+
+    memset(temp.id, '\0', sizeof(temp.id));
+    memset(temp.name, '\0', sizeof(temp.name));
+    memset(temp.year, '\0', sizeof(temp.year));
+    strcpy(temp.id, _id);
+    strcpy(temp.name, _name);
+    strcpy(temp.year, _year);
+    temp.dorm = NULL;
+
+    temp.gender = _gender;
+    return temp;
+}
+
 void assign_student(struct student_t *student, struct dorm_t *dorm)
 {
     if (dorm->capacity > dorm->residents_num && student->gender == dorm->gender)

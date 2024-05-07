@@ -13,10 +13,14 @@ int main(int _argc, char **_argv)
     struct dorm_t dorms[100];
     int student_num = 0;
     int dorm_num = 0;
+
+    char *Dorm[100];
+    char *Student[100];
+    
     
     FILE *drm;
     FILE *std;
-    drm = fopen("./storage/dorm-repository.txt", "r");  // r untuk membaca, a untuk menulis
+    drm = fopen("./storage/dorm-repository.txt", "r");  
     std = fopen("./storage/student-repository.txt", "r");
 
 

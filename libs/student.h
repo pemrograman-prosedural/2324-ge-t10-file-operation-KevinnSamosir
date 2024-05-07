@@ -14,17 +14,13 @@ struct student_t
     enum gender_t gender;
     struct dorm_t *dorm;
 };
- 
-struct student_t create_student(char *_id, char *_name, char *_year,
-                                enum gender_t _gender);
-void print_student_details(struct student_t *student, int tempallshow);
-void print_student(struct student_t *student, int tempshow);
-void move_student(struct student_t *student, struct dorm_t *dorm, struct dorm_t *dorm_t);
+
+
+struct student_t create_student(char *_id, char *_name, char *_year, enum gender_t _gender);
 void assign_student(struct student_t *student, struct dorm_t *dorm);
+void move_student(struct student_t *student, struct dorm_t *dorm, struct dorm_t *_dorm);
 void addStudent(struct student_t *student, int *student_num, char *input);
-void printAllStudents(struct student_t *student, int student_num);
 void printAllStudentDetails(struct student_t *student, int student_num);
-
-
+void dorm_emp(struct student_t *students, struct dorm_t *dorm, char *dormtemp, int studentsize, int dormsize);
+void Newstudent(struct student_t *students, struct student_t *student_modif, int studentsize);
 #endif
- 
